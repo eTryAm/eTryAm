@@ -1,0 +1,83 @@
+.mode{
+width:100px;
+heigh:100px;
+border:2px solid red;
+background-color:rgb(100,149,237);
+border-radius:5px;
+align:center;
+margin:20px 20px 20px 20px;
+color:pink;
+}
+.ball{
+height:150px;
+width:150px;
+border:2px solid pink;
+border-radius:50%;
+box-shadow:0 0 20px rgba(100,237,150,1);
+background-color:brown;
+animation:rotate 3s linear infinite;
+margin-left:500px;
+animation:rotate 3s linear infinite;
+}
+@keyframes rotate{
+from{transform:rotate(0deg) translate(100px) rotate(0deg);}
+to{transform:rotate(360deg) translate(100px) rotate(-360deg);}
+}
+.new-game{
+height:50px;
+width:100px;
+border:none;
+border-radius:10px;
+align:center;
+margin:20px 20px 20px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+font-size:20px;
+color:blue;
+background-color:lavender;
+position:relative;
+}
+.new-game::before,.new-game::after{
+content:'';
+height:60px;
+width:110px;
+border:none;
+border-radius:12px;
+position:absolute;
+background-image:conic-gradient(red,yellow,green,pink,brown,violet,orange,blue);
+z-index:-1;
+animation:spin 3s linear infinite;
+}
+
+/*eyframes spin{
+0%{transform:rotate(0deg);}
+25%{transform:rotate(90deg);}
+50%{transform:rotate(180deg);}
+75%{transform:rotate(270deg);}
+100%{transform:rotate(360deg);}
+}*/
+.guess{
+font-weight:bold;
+font-size:20px;
+color:red;
+}
+.winner{
+visibility:hidden;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+width:250px;
+height:100px;
+display:flex;
+justify-content:center;
+align-items:center;
+border:2px solid black;
+background-image:conic-gradient(red,yellow,blue,brown,pink,violet,green);
+box-shadow:0 0 15px rgba(100,149,237,0.8);
+margin:50px 50px 50px 400px;
+color:white;
+}
+
+

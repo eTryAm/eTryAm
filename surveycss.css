@@ -1,0 +1,62 @@
+div{
+font-weight:bold;
+text-align:left;
+display:block;
+margin-bottom:5px;
+}
+.label_color{
+color:rgb(255,0,0);
+}
+h1{
+color:rgb(52, 143, 235);
+text-decoration:underline;
+text-align:center;
+font-weight:bold;
+}
+fieldset {
+    width: 650px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid rgb(100, 150, 255);  /* border color */
+    border-radius: 15px;                   /* mould/rounded border */
+    box-shadow: 0 0 15px rgba(100, 150, 255, 0.5); /* border shadow */
+    transition: all 0.3s ease;             /* smooth effect */
+  }
+
+  fieldset:hover {
+    box-shadow: 0 0 25px rgba(100, 150, 255, 0.8); /* brighter shadow on hover */
+  }
+
+  legend {
+    font-weight: bold;
+    color: rgb(80, 100, 220);
+  }
+label.explaination{
+font-weight:bold;
+color:rgb(217, 52, 235);
+}
+.label_color2{
+color:rgb(255,0,0);
+font-weight:bold;
+}
+.option{
+font-weight:bold;
+}
+
+.submit{
+margin-left:400px;
+margin-bottom:10px;
+padding:10px;
+color:rgb(200,255,200);}
+
+.form_box {
+  width: 800px;
+  margin: 50px auto;  /* Centers the box */
+  padding: 20px 40px;
+  border: 2px solid rgb(100, 149, 237); /* soft blue border */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.2); /* shadow around box */
+  background-color: white;
+}
+
+

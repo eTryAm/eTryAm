@@ -1,0 +1,37 @@
+body{
+background-image:conic-gradient(#4DFFF3,#6EB4D1,#F7C59F,#2A324B,#E5F2C9,#F9ADA0,#C86FC9);
+font-family:sans-serif,algerian,verdana;
+font-size:22px;
+font-weight:bold;
+}
+.container{
+width:400px;
+height:400px;
+border:10px solid red;
+border-style:groove;
+margin-top:200px;
+border-radius:12px;
+}
+h1{
+color:hsl(240,100%,50%);
+margin-top:0;
+text-decoration:underline;
+}
+label{
+color:#310D20;
+margin-top:40px;
+margin-left:20px;
+margin-right:10px;
+margin-bottom:20px;
+}
+.submit{
+margin:20px 20px 20px 20px;
+}
+.submit:hover{
+background-color:#FFA552;
+color:white;
+}
+
+input::placeholder{
+color:#EA638C;
+}

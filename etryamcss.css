@@ -1,0 +1,127 @@
+.company-name{
+height:100px;
+width:100px;
+border:none;
+border-radius:50%;
+background-color:black;
+color:tomato;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+font-size:22px;
+position:relative;
+float:left;
+margin:0px 50px 50px 0px;
+}
+.company-name::before,.company-name::after{
+content:'';
+height:110px;
+width:110px;
+border:none;
+border-radius:50%;
+background-image:conic-gradient(red,yellow,blue,green,violet,silver,gold,pink,brown);
+position:absolute;
+z-index:-1;
+animation:rotate 3s linear infinite;
+}
+@keyframes rotate{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+.explore{
+height:50px;
+width:100px;
+border:none;
+border-radius:10px;
+background-color:rgb(100,149,255);
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+font-size:22px;
+position:relative;
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.explore::before,.explore::after{
+content:'';
+height:60px;
+width:110px;
+border:none;
+border-radius:12px;
+background-image:conic-gradient(from var(--angle),peru,tomato,lavender,gold,blue,red,purple,brown);
+position:absolute;
+z-index:-1;
+animation:3s spin linear infinite;
+
+}
+.explore:hover{
+box-shadow:0 0 20px rgba(100,200,255,0.8);
+transition:blur;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+.features{
+height:200px;
+width:860px;
+background-color:#F7A072;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+border:2px solid blue;
+border-radius:10px;
+}
+.feature{
+height:200px;
+width:200px;
+display:inline-flex;
+justify-content:center;
+align-items:center;
+border:none;
+border-radius:10px;
+font-weight:bold;
+font-size:30px;
+color:white;
+text-align:center;
+}
+.header{
+display:inline-flex;
+gap:100px;
+height:40px;
+width:1100px;
+background-color:black;
+justify-content:center;
+align-items:center;
+color:gold;
+margin-bottom:100px;
+}
+a{
+color:gold;
+text-decoration:none;
+}
+.mode{
+width:100px;
+height:50px;
+border:2px solid red;
+background-color:peru;
+border-radius:5px;
+align:center;
+margin:20px 20px 20px 20px;
+color:blue;
+float:right;
+font-weight:bold;
+}
+
+

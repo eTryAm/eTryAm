@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="surveycss.css">
+<script src="jquery.js"></script>
+<title>Your aroma</title>
+</head>
+<body class="form_box">
+<h1>What's Your Aroma</h1>
+<form action="surveyphp.php" method="post" id="survey">
+<div>
+<label for="question1" class="label_color">1.How often you use perfume or body spray</label><br>
+<label><input type="checkbox" name="question2" value="Daily">Daily</label><br>
+<label><input type="checkbox" name="question2" value="Weekly">Weekly</label><br>
+<label><input type="checkbox" name="question2" value="Occasionally">Occasionally</label><br>
+<label><input type="checkbox" name="question2" value="Rarely">Rarely</label>
+</div>
+<div>
+<label for="question2" class="label_color">2.What do you ujsually buy?</label><br>
+<label><input type="checkbox" name="question2" value="Perfume">Perfume</label><br>
+<label><input type="checkbox" name="question2" value="Body mist">Body mist</label><br>
+<label><input type="checkbox" name="question2" value="Deodorant">Deodorant</label><br>
+<label><input type="checkbox" name="question2" value="Essential oil">Essential oil</label>
+</div>
+<div>
+<label for="question3" class="label_color">3.What matters most while choosing a perfume?</label><br>
+<label><input type="checkbox" name="question2" value="Scent">Scent</label><br>
+<label><input type="checkbox" name="question2" value="Price">Price</label><br>
+<label><input type="checkbox" name="question2" value="Brand">Brand</label><br>
+<label><input type="checkbox" name="question2" value="Longevity">Longevity</label>
+</div>
+<fieldset>
+<legend>Scent fingerprint</legend>
+<label class="explaination">A unique fragnance blend based on your preferences.</label><br>
+<label for="question" class="label_color2">Would you like us to create your personalized 'scent fingerprint'?</label><br>
+<label class="option"><input type="radio" name="question">Yes</label>
+<label class="option"><input type="radio" name="question">No</label>
+<label class="option"><input type="radio" name="question">May be later</label>
+</fieldset>
+ <script>
+    document.querySelectorAll('input[type="radio"][name="question"]').forEach(radio => {
+      radio.addEventListener('click', function() {
+        if (this.previousChecked) {
+          this.checked = false;
+        }
+        this.previousChecked = this.checked;
+        document.querySelectorAll('input[type="radio"][name="question"]').forEach(r => {
+          if (r !== this) r.previousChecked = false;
+        });
+      });
+    });
+  </script>
+<div>
+<label class="label_color">4.What is your favourite color?
+<input type="color" id="favouritecolor"
+title="Click on the color box and tap on your favourite color">
+</label>
+</div><br>
+<div>
+<label class="label_color">5.D.O.B:-
+<input type="date" value="D.O.B"></LABEL><br>
+</DIV><br>
+<div>
+<label class="label_color">6.Gender</label><br>
+<label><input type="radio" name="gender" value="Male">Male</label>
+<label><input type="radio" name="gender" value="Female">Female</label>
+</div>
+<div class="submit">
+<input type="submit" name="submit" value="submit">
+</div>
+</form>
+<script src="surveyjs.js">
+</script>
+</body>
+</html>
